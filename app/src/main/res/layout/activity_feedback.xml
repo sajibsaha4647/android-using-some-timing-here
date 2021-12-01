@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".feedback">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="this is feedback"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/editone"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:textColorHighlight="@color/black"
+            android:backgroundTint="@color/purple_200"
+            />
+        <EditText
+            android:id="@+id/editwo"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="subject"
+            android:textColorHighlight="@color/black"
+            android:backgroundTint="@color/purple_200"
+            />
+        <EditText
+            android:id="@+id/editthree"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="details"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:textColorHighlight="@color/black"
+            android:backgroundTint="@color/purple_200"
+            />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/buttonone"
+           android:layout_marginRight="10dp"
+           android:layout_weight="1.5"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="submit"
+           />
+       <Button
+           android:id="@+id/buttonTwo"
+           android:layout_marginLeft="10dp"
+           android:layout_weight="1.5"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="clear"
+           />
+   </LinearLayout>
+
+</LinearLayout>
